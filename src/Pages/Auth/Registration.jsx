@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../../context/AuthContext";
 import { FaGoogle } from "react-icons/fa6";
 import toast from "react-hot-toast";
+import SocialLogin from "./SocialLogin";
 
 const Register = () => {
   const { createUser, updateUserProfile, signInWithGoogle } = use(AuthContext);
@@ -97,6 +98,7 @@ const Register = () => {
           <FaGoogle />
           Login with Google
         </button>
+       {/* <SocialLogin></SocialLogin> */}
         <p className="text-center">
           Already have an account? Please{" "}
           <Link className="text-blue-500 hover:text-blue-800" to="/auth/login">
